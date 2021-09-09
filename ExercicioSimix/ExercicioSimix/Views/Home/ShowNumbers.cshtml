@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Exercício Simix";
+}
+
+<form asp-controller="Home" asp-action="ShowNumbers"method="post">
+    <input type="submit" name="showNumbers"  value="Show Numbers" />
+</form>
+
+<hr />
+
+<p>Resultado:</p>
+
+@for (int i = 0; i < ViewBag.Numeros.Length; i++)
+{
+    <br />
+    @ViewBag.Numeros[i];
+}
