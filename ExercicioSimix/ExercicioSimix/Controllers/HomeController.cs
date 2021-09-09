@@ -29,6 +29,12 @@ namespace ExercicioSimix.Controllers
 
             for (int i = 1; i < 201; i++)
             {
+                
+                if ((i % 3 == 0) && (i % 5 == 0))
+                {
+                    resultado[i - 1] = "Z";
+                }
+                else
                 if (i % 3 == 0)
                 {
                     resultado[i - 1] = "X";
@@ -37,11 +43,6 @@ namespace ExercicioSimix.Controllers
                 if (i % 5 == 0)
                 {
                     resultado[i - 1] = "Y";
-                }
-                else
-                if ((i % 3 == 0) && (i % 5 == 0))
-                {
-                    resultado[i - 1] = "Z";
                 }
                 else
                 {
